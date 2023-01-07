@@ -17,6 +17,7 @@ MODEL_IDS = [
     "stabilityai/stable-diffusion-2",
     "stabilityai/stable-diffusion-2-base",
     "stabilityai/stable-diffusion-2-inpainting",
+    "ckpt/sd-wikiart-v2",
 ]
 
 
