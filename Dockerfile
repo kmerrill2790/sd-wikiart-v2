@@ -96,7 +96,7 @@ ENV HF_AUTH_TOKEN=${HF_AUTH_TOKEN}
 # "CompVis/stable-diffusion-v1-4", "hakurei/waifu-diffusion",
 # "stabilityai/stable-diffusion-2",
 # "stabilityai/stable-diffusion-2-inpainting" etc.
-ARG MODEL_ID="stabilityai/stable-diffusion-2"
+ARG MODEL_ID="ckpt/sd-wikiart-v2"
 ENV MODEL_ID=${MODEL_ID}
 
 # "" = model default.
@@ -128,7 +128,7 @@ ARG MODEL_URL=""
 ENV MODEL_URL=${MODEL_URL}
 # If set, it will be downloaded and converted to diffusers format, and
 # saved in a directory with same MODEL_ID name to be loaded by diffusers.
-ARG CHECKPOINT_URL=""
+ARG CHECKPOINT_URL="https://huggingface.co/ckpt/sd-wikiart-v2/resolve/main/sd-wikiart-v2.ckpt"
 ENV CHECKPOINT_URL=${CHECKPOINT_URL}
 ARG CHECKPOINT_CONFIG_URL=""
 ENV CHECKPOINT_CONFIG_URL=${CHECKPOINT_CONFIG_URL}
